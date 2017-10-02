@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-xs-12">
+    <a 
+      href="#" 
+      class="list-group-item clearfix"
+      *ngFor="let directory of directories">
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">{{ directory.name }}</h4>
+        <p class="list-group-item-text">{{ directory.email }}</p>
+      </div>
+      <span class="pull-right">
+        <img 
+          src="{{ directory.imagePath }}" 
+          alt="{{ directory.name }}" 
+          class="img-responsive" 
+          style="max-height: 50px;">
+      </span>
+    </a>
+    <app-directory-item></app-directory-item>
+  </div>
+</div>
